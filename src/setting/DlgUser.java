@@ -134,7 +134,12 @@ public class DlgUser extends javax.swing.JDialog {
                     "[N]Limbah B3 Medis Per Tanggal","[N]Limbah B3 Medis Per Bulan","[F]Limbah Padat Domestik","[N]Limbah Padat Domestik Per Tanggal",
                     "[N]Limbah Padat Domestik Per Bulan","[F]Mutu Air Limbah","[F]Pest Control","[P]Ruang Perpustakaan","[P]Kategori Koleksi","[P]Jenis Koleksi",
                     "[P]Pengarang/Penulis","[P]Penerbit Koleksi","[P]Koleksi Perpustakaan","[P]Inventaris Perpustakaan","[P]Pengaturan Peminjaman","[P]Denda Perpustakaan",
-                    "[P]Anggota Perpustakaan","[P]Peminjaman Koleksi Perpustakaan","[P]Bayar Denda Perpustakaan","[P]Data Koleksi Ebook"
+                    "[P]Anggota Perpustakaan","[P]Peminjaman Koleksi Perpustakaan","[P]Bayar Denda Perpustakaan","[P]Data Koleksi Ebook","[C]Jenis Cidera K3",
+                    "[C]Penyebab Kecelakaan K3","[C]Jenis Luka K3","[C]Lokasi Kejadian K3","[C]Dampak Cidera K3","[C]Jenis Pekerjaan K3","[C]Bagian Tubuh K3",
+                    "[C]Peristiwa K3","[N]K3 Per Tahun","[N]K3 Per Bulan","[N]K3 Per Tanggal","[N]K3 Per Jenis Cidera","[N]K3 Per Penyebab Kecelakaan","[N]K3 Per Jenis Luka",
+                    "[N]K3 Per Lokasi Kejadian","[N]K3 Per Dampak Cidera","[N]K3 Per Jenis Pekerjaan","[N]K3 Per Bagian Tubuh","[C]Jenis Cidera K3 Per Tahun",
+                    "[C]Penyebab Kecelakaan K3 Per Tahun","[C]Jenis Luka K3 Per Tahun","[C]Lokasi Kejadian K3 Per Tahun","[C]Dampak Cidera K3 Per Tahun",
+                    "[C]Jenis Pekerjaan K3 Per Tahun","[C]Bagian Tubuh K3 Per Tahun"
         };
         
         tabMode=new DefaultTableModel(null,row){
@@ -268,6 +273,16 @@ public class DlgUser extends javax.swing.JDialog {
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
+                java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class,
                 java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class, java.lang.Boolean.class
              };
              @Override
@@ -281,7 +296,7 @@ public class DlgUser extends javax.swing.JDialog {
         tbUser.setPreferredScrollableViewportSize(new Dimension(500,500));
         tbUser.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
 
-        for (i = 0; i < 481;i++) {
+        for (i = 0; i < 506;i++) {
             TableColumn column = tbUser.getColumnModel().getColumn(i);
             if(i==0){
                 column.setPreferredWidth(130);
@@ -879,6 +894,56 @@ public class DlgUser extends javax.swing.JDialog {
                 column.setPreferredWidth(152);
             }else if(i==480){
                 column.setPreferredWidth(114);
+            }else if(i==481){
+                column.setPreferredWidth(97);
+            }else if(i==482){
+                column.setPreferredWidth(142);
+            }else if(i==483){
+                column.setPreferredWidth(87);
+            }else if(i==484){
+                column.setPreferredWidth(112);
+            }else if(i==485){
+                column.setPreferredWidth(111);
+            }else if(i==486){
+                column.setPreferredWidth(113);
+            }else if(i==487){
+                column.setPreferredWidth(103);
+            }else if(i==488){
+                column.setPreferredWidth(82);
+            }else if(i==489){
+                column.setPreferredWidth(86);
+            }else if(i==490){
+                column.setPreferredWidth(83);
+            }else if(i==491){
+                column.setPreferredWidth(95);
+            }else if(i==492){
+                column.setPreferredWidth(116);
+            }else if(i==493){
+                column.setPreferredWidth(161);
+            }else if(i==494){
+                column.setPreferredWidth(106);
+            }else if(i==495){
+                column.setPreferredWidth(131);
+            }else if(i==496){
+                column.setPreferredWidth(130);
+            }else if(i==497){
+                column.setPreferredWidth(132);
+            }else if(i==498){
+                column.setPreferredWidth(122);
+            }else if(i==499){
+                column.setPreferredWidth(149);
+            }else if(i==500){
+                column.setPreferredWidth(194);
+            }else if(i==501){
+                column.setPreferredWidth(139);
+            }else if(i==502){
+                column.setPreferredWidth(164);
+            }else if(i==503){
+                column.setPreferredWidth(163);
+            }else if(i==504){
+                column.setPreferredWidth(165);
+            }else if(i==505){
+                column.setPreferredWidth(155);
             }else{
                 column.setPreferredWidth(130);
             }
@@ -1369,7 +1434,8 @@ public class DlgUser extends javax.swing.JDialog {
                     "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
                     "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
                     "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
-                    "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false'","User")==true){
+                    "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false',"+
+                    "'false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false','false'","User")==true){
                 tampil();
                 emptTeks();
             }            
@@ -1892,7 +1958,32 @@ public class DlgUser extends javax.swing.JDialog {
                     "anggota_perpustakaan='"+tbUser.getValueAt(i,477).toString()+"',"+
                     "peminjaman_perpustakaan='"+tbUser.getValueAt(i,478).toString()+"',"+
                     "bayar_denda_perpustakaan='"+tbUser.getValueAt(i,479).toString()+"',"+
-                    "ebook_perpustakaan='"+tbUser.getValueAt(i,480).toString()+"'");
+                    "ebook_perpustakaan='"+tbUser.getValueAt(i,480).toString()+"',"+
+                    "jenis_cidera_k3rs='"+tbUser.getValueAt(i,481).toString()+"',"+
+                    "penyebab_k3rs='"+tbUser.getValueAt(i,482).toString()+"',"+
+                    "jenis_luka_k3rs='"+tbUser.getValueAt(i,483).toString()+"',"+
+                    "lokasi_kejadian_k3rs='"+tbUser.getValueAt(i,484).toString()+"',"+
+                    "dampak_cidera_k3rs='"+tbUser.getValueAt(i,485).toString()+"',"+
+                    "jenis_pekerjaan_k3rs='"+tbUser.getValueAt(i,486).toString()+"',"+
+                    "bagian_tubuh_k3rs='"+tbUser.getValueAt(i,487).toString()+"',"+
+                    "peristiwa_k3rs='"+tbUser.getValueAt(i,488).toString()+"',"+
+                    "grafik_k3_pertahun='"+tbUser.getValueAt(i,489).toString()+"',"+
+                    "grafik_k3_perbulan='"+tbUser.getValueAt(i,490).toString()+"',"+
+                    "grafik_k3_pertanggal='"+tbUser.getValueAt(i,491).toString()+"',"+
+                    "grafik_k3_perjeniscidera='"+tbUser.getValueAt(i,492).toString()+"',"+
+                    "grafik_k3_perpenyebab='"+tbUser.getValueAt(i,493).toString()+"',"+
+                    "grafik_k3_perjenisluka='"+tbUser.getValueAt(i,494).toString()+"',"+
+                    "grafik_k3_lokasikejadian='"+tbUser.getValueAt(i,495).toString()+"',"+
+                    "grafik_k3_dampakcidera='"+tbUser.getValueAt(i,496).toString()+"',"+
+                    "grafik_k3_perjenispekerjaan='"+tbUser.getValueAt(i,497).toString()+"',"+
+                    "grafik_k3_perbagiantubuh='"+tbUser.getValueAt(i,498).toString()+"',"+
+                    "jenis_cidera_k3rstahun='"+tbUser.getValueAt(i,499).toString()+"',"+
+                    "penyebab_k3rstahun='"+tbUser.getValueAt(i,500).toString()+"',"+
+                    "jenis_luka_k3rstahun='"+tbUser.getValueAt(i,501).toString()+"',"+
+                    "lokasi_kejadian_k3rstahun='"+tbUser.getValueAt(i,502).toString()+"',"+
+                    "dampak_cidera_k3rstahun='"+tbUser.getValueAt(i,503).toString()+"',"+
+                    "jenis_pekerjaan_k3rstahun='"+tbUser.getValueAt(i,504).toString()+"',"+
+                    "bagian_tubuh_k3rstahun='"+tbUser.getValueAt(i,505).toString()+"'");
             }            
             tampil();
             emptTeks();
@@ -2454,7 +2545,32 @@ public class DlgUser extends javax.swing.JDialog {
                                     "anggota_perpustakaan='"+tbUser.getValueAt(barisdicopy,477).toString()+"',"+
                                     "peminjaman_perpustakaan='"+tbUser.getValueAt(barisdicopy,478).toString()+"',"+
                                     "bayar_denda_perpustakaan='"+tbUser.getValueAt(barisdicopy,479).toString()+"',"+
-                                    "ebook_perpustakaan='"+tbUser.getValueAt(barisdicopy,480).toString()+"'");
+                                    "ebook_perpustakaan='"+tbUser.getValueAt(barisdicopy,480).toString()+"',"+
+                                    "jenis_cidera_k3rs='"+tbUser.getValueAt(barisdicopy,481).toString()+"',"+
+                                    "penyebab_k3rs='"+tbUser.getValueAt(barisdicopy,482).toString()+"',"+
+                                    "jenis_luka_k3rs='"+tbUser.getValueAt(barisdicopy,483).toString()+"',"+
+                                    "lokasi_kejadian_k3rs='"+tbUser.getValueAt(barisdicopy,484).toString()+"',"+
+                                    "dampak_cidera_k3rs='"+tbUser.getValueAt(barisdicopy,485).toString()+"',"+
+                                    "jenis_pekerjaan_k3rs='"+tbUser.getValueAt(barisdicopy,486).toString()+"',"+
+                                    "bagian_tubuh_k3rs='"+tbUser.getValueAt(barisdicopy,487).toString()+"',"+
+                                    "peristiwa_k3rs='"+tbUser.getValueAt(barisdicopy,488).toString()+"',"+
+                                    "grafik_k3_pertahun='"+tbUser.getValueAt(barisdicopy,489).toString()+"',"+
+                                    "grafik_k3_perbulan='"+tbUser.getValueAt(barisdicopy,490).toString()+"',"+
+                                    "grafik_k3_pertanggal='"+tbUser.getValueAt(barisdicopy,491).toString()+"',"+
+                                    "grafik_k3_perjeniscidera='"+tbUser.getValueAt(barisdicopy,492).toString()+"',"+
+                                    "grafik_k3_perpenyebab='"+tbUser.getValueAt(barisdicopy,493).toString()+"',"+
+                                    "grafik_k3_perjenisluka='"+tbUser.getValueAt(barisdicopy,494).toString()+"',"+
+                                    "grafik_k3_lokasikejadian='"+tbUser.getValueAt(barisdicopy,495).toString()+"',"+
+                                    "grafik_k3_dampakcidera='"+tbUser.getValueAt(barisdicopy,496).toString()+"',"+
+                                    "grafik_k3_perjenispekerjaan='"+tbUser.getValueAt(barisdicopy,497).toString()+"',"+
+                                    "grafik_k3_perbagiantubuh='"+tbUser.getValueAt(barisdicopy,498).toString()+"',"+
+                                    "jenis_cidera_k3rstahun='"+tbUser.getValueAt(barisdicopy,499).toString()+"',"+
+                                    "penyebab_k3rstahun='"+tbUser.getValueAt(barisdicopy,500).toString()+"',"+
+                                    "jenis_luka_k3rstahun='"+tbUser.getValueAt(barisdicopy,501).toString()+"',"+
+                                    "lokasi_kejadian_k3rstahun='"+tbUser.getValueAt(barisdicopy,502).toString()+"',"+
+                                    "dampak_cidera_k3rstahun='"+tbUser.getValueAt(barisdicopy,503).toString()+"',"+
+                                    "jenis_pekerjaan_k3rstahun='"+tbUser.getValueAt(barisdicopy,504).toString()+"',"+
+                                    "bagian_tubuh_k3rstahun='"+tbUser.getValueAt(barisdicopy,505).toString()+"'");
                             }    
                             userdicopy="";
                             copyhakakses="";
@@ -2741,7 +2857,11 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                         "grafik_limbahdomestik_pertanggal,grafik_limbahdomestik_perbulan,mutu_air_limbah,pest_control,ruang_perpustakaan,"+
                         "kategori_perpustakaan,jenis_perpustakaan,pengarang_perpustakaan,penerbit_perpustakaan,koleksi_perpustakaan,"+
                         "inventaris_perpustakaan,set_peminjaman_perpustakaan,denda_perpustakaan,anggota_perpustakaan,peminjaman_perpustakaan,"+
-                        "bayar_denda_perpustakaan,ebook_perpustakaan from user order by AES_DECRYPT(id_user,'nur')");
+                        "bayar_denda_perpustakaan,ebook_perpustakaan,jenis_cidera_k3rs,penyebab_k3rs,jenis_luka_k3rs,lokasi_kejadian_k3rs,"+
+                        "dampak_cidera_k3rs,jenis_pekerjaan_k3rs,bagian_tubuh_k3rs,peristiwa_k3rs,grafik_k3_pertahun,grafik_k3_perbulan,"+
+                        "grafik_k3_pertanggal,grafik_k3_perjeniscidera,grafik_k3_perpenyebab,grafik_k3_perjenisluka,grafik_k3_lokasikejadian,"+
+                        "grafik_k3_dampakcidera,grafik_k3_perjenispekerjaan,grafik_k3_perbagiantubuh,jenis_cidera_k3rstahun,penyebab_k3rstahun,"+
+                        "jenis_luka_k3rstahun,lokasi_kejadian_k3rstahun,dampak_cidera_k3rstahun,jenis_pekerjaan_k3rstahun,bagian_tubuh_k3rstahun from user order by AES_DECRYPT(id_user,'nur')");
             try {
                 rs=ps.executeQuery();
                 while(rs.next()){
@@ -3234,7 +3354,32 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                                rs.getBoolean("anggota_perpustakaan"),
                                rs.getBoolean("peminjaman_perpustakaan"),
                                rs.getBoolean("bayar_denda_perpustakaan"),
-                               rs.getBoolean("ebook_perpustakaan")
+                               rs.getBoolean("ebook_perpustakaan"),
+                               rs.getBoolean("jenis_cidera_k3rs"),
+                               rs.getBoolean("penyebab_k3rs"),
+                               rs.getBoolean("jenis_luka_k3rs"),
+                               rs.getBoolean("lokasi_kejadian_k3rs"),
+                               rs.getBoolean("dampak_cidera_k3rs"),
+                               rs.getBoolean("jenis_pekerjaan_k3rs"),
+                               rs.getBoolean("bagian_tubuh_k3rs"),
+                               rs.getBoolean("peristiwa_k3rs"),
+                               rs.getBoolean("grafik_k3_pertahun"),
+                               rs.getBoolean("grafik_k3_perbulan"),
+                               rs.getBoolean("grafik_k3_pertanggal"),
+                               rs.getBoolean("grafik_k3_perjeniscidera"),
+                               rs.getBoolean("grafik_k3_perpenyebab"),
+                               rs.getBoolean("grafik_k3_perjenisluka"),
+                               rs.getBoolean("grafik_k3_lokasikejadian"),
+                               rs.getBoolean("grafik_k3_dampakcidera"),
+                               rs.getBoolean("grafik_k3_perjenispekerjaan"),
+                               rs.getBoolean("grafik_k3_perbagiantubuh"),
+                               rs.getBoolean("jenis_cidera_k3rstahun"),
+                               rs.getBoolean("penyebab_k3rstahun"),
+                               rs.getBoolean("jenis_luka_k3rstahun"),
+                               rs.getBoolean("lokasi_kejadian_k3rstahun"),
+                               rs.getBoolean("dampak_cidera_k3rstahun"),
+                               rs.getBoolean("jenis_pekerjaan_k3rstahun"),
+                               rs.getBoolean("bagian_tubuh_k3rstahun")
                             });
                         }   
                     } catch (Exception e) {
@@ -3716,7 +3861,32 @@ private void BtnPrintKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_
                            rs.getBoolean("anggota_perpustakaan"),
                            rs.getBoolean("peminjaman_perpustakaan"),
                            rs.getBoolean("bayar_denda_perpustakaan"),
-                           rs.getBoolean("ebook_perpustakaan")
+                           rs.getBoolean("ebook_perpustakaan"),
+                           rs.getBoolean("jenis_cidera_k3rs"),
+                           rs.getBoolean("penyebab_k3rs"),
+                           rs.getBoolean("jenis_luka_k3rs"),
+                           rs.getBoolean("lokasi_kejadian_k3rs"),
+                           rs.getBoolean("dampak_cidera_k3rs"),
+                           rs.getBoolean("jenis_pekerjaan_k3rs"),
+                           rs.getBoolean("bagian_tubuh_k3rs"),
+                           rs.getBoolean("peristiwa_k3rs"),
+                           rs.getBoolean("grafik_k3_pertahun"),
+                           rs.getBoolean("grafik_k3_perbulan"),
+                           rs.getBoolean("grafik_k3_pertanggal"),
+                           rs.getBoolean("grafik_k3_perjeniscidera"),
+                           rs.getBoolean("grafik_k3_perpenyebab"),
+                           rs.getBoolean("grafik_k3_perjenisluka"),
+                           rs.getBoolean("grafik_k3_lokasikejadian"),
+                           rs.getBoolean("grafik_k3_dampakcidera"),
+                           rs.getBoolean("grafik_k3_perjenispekerjaan"),
+                           rs.getBoolean("grafik_k3_perbagiantubuh"),
+                           rs.getBoolean("jenis_cidera_k3rstahun"),
+                           rs.getBoolean("penyebab_k3rstahun"),
+                           rs.getBoolean("jenis_luka_k3rstahun"),
+                           rs.getBoolean("lokasi_kejadian_k3rstahun"),
+                           rs.getBoolean("dampak_cidera_k3rstahun"),
+                           rs.getBoolean("jenis_pekerjaan_k3rstahun"),
+                           rs.getBoolean("bagian_tubuh_k3rstahun")
                         });
                     }                                             
                  }
